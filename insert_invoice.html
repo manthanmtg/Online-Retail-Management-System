@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Add Invoice</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <h1 class="display-4" style="padding:5px;">Add an Invoice</h1>
+        <form method="POST" action="insert_invoice.php">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label for="InvoiceNO">Product ID</label>
+                        <input type="number" max="100000" name="InvoiceNO" class="form-control" id="InvoiceNO" placeholder="Enter Invoice Number">
+                    </div>
+                    <div class="col">
+                        <label for="OrderDate">Order</label>
+                        <input type="date" class="form-control" id="OrderDate" name="OrderDate" placeholder="Enter Order Date">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="AmountPaid">Amount Paid</label>
+                <input type="number" name="AmountPaid" class="form-control" id="AmountPaid" placeholder="Enter Amount Paid">
+            </div>
+            <div class="form-group">
+                <label for="GSTIN">GSTIN</label>
+                <input type="text" class="form-control" name="GSTIN" id="GSTIN" placeholder="Enter GSTIN">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </body>
+
+</html>

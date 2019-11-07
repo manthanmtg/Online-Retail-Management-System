@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Delete Customer</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <h1 class="display-4" style="padding:5px;">Delete a Customer</h1>
+        <form method="POST" action="delete_customer.php">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label for="custid">Customer ID</label>
+                        <input type="number" max="100000" name="custid" class="form-control" id="custid" placeholder="Enter Customer ID">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label for="email">Email ID</label>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email ID">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label for="phno">Phone Number</label>
+                        <input type="number" name="phno" class="form-control" id="phno" placeholder="Enter Phone Number">
+                    </div>
+                </div>
+            </div>
+            <center><button type="submit" class="btn btn-primary">Delete</button></center>
+        </form>
+
+        <pre>
+
+Note:
+    Enter <u><b>ONLY ONE</b></u> of Customer ID, EmailID and Phone Number. In case of multiple entries, the first match is selected by default!!
+        </pre>
+    </body>
+
+</html>

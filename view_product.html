@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>View Product</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <form action="view_product.php" method="post">
+            <div class="flex-container">
+                <div class="jumbotron jumbotron-fluid">
+                   <div class="container">
+                      <h1 class="display-4">Product Table</h1>
+                   </div>
+                </div>
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="checkbox" id="ProductID" name="ProductID">
+                        <label class="form-check-label" for="ProductID">Product ID</label>
+                    </div>
+                    <div class="input-group-text">
+                        <input type="checkbox" id="PName" name="PName">
+                        <label class="form-check-label" for="PName">Product Name</label>
+                    </div>
+                    <div class="input-group-text">
+                        <input type="checkbox" id="Description" name="Description">
+                        <label class="form-check-label" for="Description">Description</label>
+                    </div>
+                    <div class="input-group-text">
+                        <input type="checkbox" id="Category" name="Category">
+                        <label class="form-check-label" for="Category">Category</label>
+                    </div>
+                    <div class="input-group-text">
+                        <input type="checkbox" id="Cost_Price" name="Cost_Price">
+                        <label class="form-check-label" for="Cost_Price">Cost Price</label>
+                    </div>
+                    <div class="input-group-text">
+                        <input type="checkbox" id="Selling_Price" name="Selling_Price">
+                        <label class="form-check-label" for="Selling_Price">Selling Price</label>
+                    </div>
+                </div>
+                <h3><span class="badge badge-secondary">CONDITIONS</span></h3>
+                <div class="input-group align-items-center justify-content-center">
+                    <span class="input-group-text" id="">Product ID</span>
+                    <input type="text" name="pidcond" class="form-control col-lg-2">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="note">
+                    <pre>
+    Note:
+        Product ID
+            Please input in the form X-Y where X and Y are numerical values
+                X- refers >=X
+                -Y refers <=Y
+                - or blank refers to select all rows
+                    </pre>
+                </div>
+            </div>
+        </form>
+    </body>
+
+</html>

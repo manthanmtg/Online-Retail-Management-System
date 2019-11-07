@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Complex Queries
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <ul class="list-group">
+        <li class="list-group-item">1. Retreive the all orders of a customer ,given the EmailID of the customer</li>
+        <li class="list-group-item">2. Retreive the the total amount spent by a customer
+            given the customer ID (customerID=10 in this case)</li>
+        <li class="list-group-item">3. Retreive all the orders of the product with product id =5</li>
+        <li class="list-group-item">4. Retreive the total number of orders of the product with product id =5</li>
+        <li class="list-group-item list-group-item-warning">5. Arrange all the products based on their popularity(based on the number of orders each product has)</li>
+        <li class="list-group-item list-group-item-danger">6. </li>
+        <li class="list-group-item list-group-item-danger">7. Retrieve the name of the courier service
+            that delivered the most orders of a particular product</li>
+        <li class="list-group-item list-group-item-danger">8. Retrieve the name of the courier service that delivered the most number of orders</li>
+        <li class="list-group-item list-group-item-danger">9. Retrieve the name of the delivery system that hired the courier service
+            with the most number of deliveries</li>
+        <li class="list-group-item list-group-item-danger">10. Retreive the total orders for product with product id =5 and the order date
+            between 2017-12-01 and 2017-12-31</li>
+        <li class="list-group-item list-group-item-warning">11. Retrieve the total orders for all products with order date between 2017-12-01
+            and Current Date</li>
+        <li class="list-group-item list-group-item-danger">12. Retrieve the total amount spent by all customers</li>
+        <li class="list-group-item">13. </li>
+        <li class="list-group-item list-group-item-warning">14. List the availibility of all products in all inventories</li>
+        <li class="list-group-item list-group-item-warning">15. Retrieve the name of the delivery system that hired the courier
+            service with the most number of deliveries for a particular product</li>
+    </ul>
+    <form class="" action="complex.php" method="post">
+        <div>
+            <input type="number" name="queryNum" style="width: 145px" placeholder="Enter No" class="form-control">
+            <button type="submit" name="button" class="btn-info">Get Results</button>
+        </div>
+    </form>
+
+</body>
+
+</html>

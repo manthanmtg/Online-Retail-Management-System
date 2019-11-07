@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>View Invoice</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <form action="view_invoice.php" method="post">
+            <div class="flex-container">
+                <div class="jumbotron jumbotron-fluid">
+                   <div class="container">
+                      <h1 class="display-4">Invoice Table</h1>
+                   </div>
+                </div>
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="checkbox" id="InvoiceNO" name="InvoiceNO">
+                        <label class="form-check-label" for="InvoiceNO">Invoice No</label>
+                    </div>
+                    <div class="input-group-text">
+                        <input type="checkbox" id="OrderDate" name="OrderDate">
+                        <label class="form-check-label" for="OrderDate">Order Date</label>
+                    </div>
+                    <div class="input-group-text">
+                        <input type="checkbox" id="AmountPaid" name="AmountPaid">
+                        <label class="form-check-label" for="AmountPaid">Amount Paid</label>
+                    </div>
+                    <div class="input-group-text">
+                        <input type="checkbox" id="GSTIN" name="GSTIN">
+                        <label class="form-check-label" for="GSTIN">GSTIN</label>
+                    </div>
+                </div>
+                <h3><span class="badge badge-secondary">CONDITIONS</span></h3>
+                <div class="input-group align-items-center justify-content-center">
+                    <span class="input-group-text" id="">Invoice Number</span>
+                    <input type="text" name="invcond" class="form-control col-lg-2">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="note">
+                    <pre>
+    Note:
+        Product ID
+            Please input in the form X-Y where X and Y are numerical values
+                X- refers >=X
+                -Y refers <=Y
+                - or blank refers to select all rows
+                    </pre>
+                </div>
+            </div>
+        </form>
+    </body>
+
+</html>

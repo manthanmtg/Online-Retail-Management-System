@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Add Product</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <h1 class="display-4" style="padding:5px;">Add a Product</h1>
+        <form method="POST" action="insert_product.php">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label for="ProductID">Product ID</label>
+                        <input type="number" max="100000" name="ProductID" class="form-control" id="ProductID" placeholder="Enter Product ID">
+                    </div>
+                    <div class="col">
+                        <label for="PName">Product Name</label>
+                        <input type="text" class="form-control" id="PName" name="PName" placeholder="Enter Product Name">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Description">Decsription</label>
+                <input type="text" name="Description" class="form-control" id="Description" placeholder="Enter Product Description">
+            </div>
+            <div class="form-group">
+                <label for="Category">Category</label>
+                <input type="text" class="form-control" name="Category" id="Category" placeholder="Enter Category">
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label for="Cost_Price">Cost Price</label>
+                        <input type="text" name="Cost_Price" class="form-control" placeholder="Cost Price">
+                    </div>
+                    <div class="col">
+                        <label for="Selling_Price">Selling Price</label>
+                        <input type="text" name="Selling_Price" class="form-control" placeholder="Selling Price">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </body>
+
+</html>

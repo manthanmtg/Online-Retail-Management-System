@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Delete Product</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <h1 class="display-4" style="padding:5px;">Delete a Product</h1>
+        <form method="POST" action="delete_product.php">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label for="ProductID">Product ID</label>
+                        <input type="number" max="100000" name="ProductID" class="form-control" id="ProductID" placeholder="Enter Product ID">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label for="phno">Product Name</label>
+                        <input type="text" name="PName" class="form-control" id="PName" placeholder="Enter Product Name">
+                    </div>
+                </div>
+            </div>
+            <center><button type="submit" class="btn btn-primary">Submit</button></center>
+        </form>
+
+        <pre>
+
+Note:
+    Enter <u><b>ONLY ONE</b></u> of Product ID and Product Name. In case of multiple entries, the first match is selected by default!!
+        </pre>
+    </body>
+
+</html>

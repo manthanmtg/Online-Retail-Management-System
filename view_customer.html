@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>View Customer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form action="view_customer.php" method="post">
+        <div class="flex-container">
+            <div class="jumbotron jumbotron-fluid">
+               <div class="container">
+                  <h1 class="display-4">Customer Table</h1>
+               </div>
+            </div>
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input type="checkbox" id="custid" name="CustomerID">
+                    <label class="form-check-label" for="custid">Customer ID</label>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" id="email" name="EmailID">
+                    <label class="form-check-label" for="email">Customer email</label>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" id="fname" name="Fname">
+                    <label class="form-check-label" for="fname">First Name</label>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" id="minit" name="Minit">
+                    <label class="form-check-label" for="minit">Middle Name</label>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" id="Lname" name="Lname">
+                    <label class="form-check-label" for="Lname">Last Name</label>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" id="PhNo" name="PhNo">
+                    <label class="form-check-label" for="PhNo">Phone Number</label>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" id="Address" name="Address">
+                    <label class="form-check-label" for="Address">Address</label>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" id="RegDate" name="RegDate">
+                    <label class="form-check-label" for="RegDate">RegDate</label>
+                </div>
+            </div>
+            <h3><span class="badge badge-secondary">CONDITIONS</span></h3>
+            <div class="input-group align-items-center justify-content-center">
+                <span class="input-group-text" id="">Customer ID</span>
+                <input type="text" name="custidcond" class="form-control col-lg-2">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="note">
+                <pre>
+Note:
+    CustomerID
+        Please input in the form X-Y where X and Y are numerical values
+            X- refers >=X
+            -Y refers <=Y
+            - or blank refers to select all rows
+</pre>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

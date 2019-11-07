@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Update Product</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <form action="update_product.php" method="post">
+            <div class="flex-container">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Product Table</h1>
+                    </div>
+                </div>
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="checkbox" id="PName_CB" name="PName_CB">
+                        <label class="form-check-label" for="PName">Product Name :</label>
+                        <input type="text" class="form-control" id="PName" name="PName" placeholder="">
+                    </div>
+                    <div class="input-group-text">
+                        <input type="checkbox" id="Description_CB" name="Description_CB">
+                        <label class="form-check-label" for="Description">Description :</label>
+                        <input type="text" name="Description" class="form-control" id="Description" placeholder="">
+                    </div>
+                    <div class="input-group-text">
+                        <input type="checkbox" id="Category_CB" name="Category_CB">
+                        <label class="form-check-label" for="Category">Category :</label>
+                        <input type="text" name="Category" class="form-control" id="Category" placeholder="">
+                    </div>
+                    <div class="input-group-text">
+                        <input type="checkbox" id="Cost_Price_CB" name="Cost_Price_CB">
+                        <label class="form-check-label" for="Cost_Price">Cost Price :</label>
+                        <input type="number" name="Cost_Price" class="form-control" id="Cost_Price" placeholder="">
+                    </div>
+                    <div class="input-group-text">
+                        <input type="checkbox" id="Selling_Price_CB" name="Selling_Price_CB">
+                        <label class="form-check-label" for="Selling_Price">Selling Price :</label>
+                        <input type="number" name="Selling_Price" class="form-control" id="Selling_Price" placeholder=""></label>
+                    </div>
+                </div>
+            </div>
+
+<!--Conditions begin from here-->
+            <div class="flex-container">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Conditions</h1>
+                    </div>
+                </div>
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="checkbox" id="ProductIDCond_CB" name="ProductIDCond_CB">
+                        <label class="form-check-label" for="ProductIDCond">Product ID :</label>
+                        <input type="number" name="ProductIDCond" class="form-control" id="ProductIDCond" placeholder="">
+                    </div>
+                    <div class="input-group-text">
+                        <input type="checkbox" id="PNameCond" name="PNameCond_CB">
+                        <label class="form-check-label" for="PNameCond">Product Name : </label>
+                        <input type="text" name="PNameCond" class="from-control" id="PNameCond" placeholder="">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="note">
+                <pre>
+
+Note:
+    You cannot change the ProductID!!
+    Choose <u><b>ONLY ONE</b></u> of the conditions.
+
+                </pre>
+            </div>
+        </form>
+    </body>
+
+</html>

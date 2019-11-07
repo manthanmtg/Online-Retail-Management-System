@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Update Customer</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <form action="update_customer.php" method="post">
+            <div class="flex-container">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Customer Table</h1>
+                    </div>
+                </div>
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="checkbox" id="email" name="EmailID_CB">
+                        <label class="form-check-label" for="email">Customer Email :</label>
+                        <label for="email"></label>
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="">
+                    </div>
+                    <div class="input-group-text">
+                        <input type="checkbox" id="fname" name="Fname_CB">
+                        <label class="form-check-label" for="fname">First Name :</label>
+                        <input type="text" name="fname" class="form-control" id="fname" placeholder="">
+                    </div>
+                    <div class="input-group-text">
+                        <input type="checkbox" id="minit" name="Minit_CB">
+                        <label class="form-check-label" for="minit">Middle Initial :</label>
+                        <input type="text" name="mname" class="form-control" id="minit" placeholder="">
+                    </div>
+                    <div class="input-group-text">
+                        <input type="checkbox" id="Lname" name="Lname_CB">
+                        <label class="form-check-label" for="Lname">Last Name :</label>
+                        <input type="text" name="lname" class="form-control" id="lname" placeholder="">
+                    </div>
+                    <div class="input-group-text">
+                        <input type="checkbox" id="PhNo" name="PhNo_CB">
+                        <label class="form-check-label" for="PhNo">Phone Number :</label>
+                        <input type="number" name="phno" class="form-control" id="phno" placeholder="">
+                    </div>
+                    <div class="input-group-text">
+                        <input type="checkbox" id="Address" name="Address_CB">
+                        <label class="form-check-label" for="Address">Address :</label>
+                        <input type="text" name="add" class="form-control" id="add" placeholder=""></label>
+                    </div>
+                </div>
+            </div>
+
+<!--Conditions begin from here-->
+            <div class="flex-container">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Conditions</h1>
+                    </div>
+                </div>
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                    <!--<div class="input-group align-items-center justify-content-center">-->
+                        <input type="checkbox" id="custidcond" name="CustIdCond_CB">
+                        <label class="form-check-label" for="custid">Customer ID : </label>
+                        <input type="number" max="100000" name="custidcond" class="form-control col-lg-2" id="custidcond" placeholder="">
+                    </div>
+                    <div class="input-group-text">
+                        <input type="checkbox" id="emailcond" name="EmailIDCond_CB">
+                        <label class="form-check-label" for="email">Customer Email :</label>
+                        <label for="email"></label>
+                        <input type="email" class="form-control col-lg-2" id="emailcond" name="emailcond" aria-describedby="emailHelp" placeholder="">
+                    </div>
+                    <div class="input-group-text">
+                        <input type="checkbox" id="PhNocond" name="PhNoCond_CB">
+                        <label class="form-check-label" for="PhNo">Phone Number :</label>
+                        <input type="number" name="phnocond" class="form-control" id="phno" placeholder="">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="note">
+                <pre>
+
+Note:
+    You cannot change the CustomerID!!
+    Choose <u><b>ONLY ONE</b></u> of the conditions.
+
+                </pre>
+            </div>
+        </form>
+    </body>
+
+</html>
